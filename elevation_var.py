@@ -12,3 +12,4 @@ elevation_dataframe = pd.read_csv(elevation_file, usecols=['altitude_MEAN'])
 municipality_dataframe = municipality_dataframe.join(elevation_dataframe)
 # Creating the csv file
 municipality_dataframe.to_csv('DANE_Dengue_Data_Variables.csv', index=False)
+print(municipality_dataframe)
